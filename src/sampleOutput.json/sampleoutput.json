@@ -1,0 +1,161 @@
+
+// articles = [
+//   {
+//     source: { id: "abc-news-au", name: "ABC News (AU)" },
+//     author: "ABC News",
+//     title: "Live scorecard: India vs Australia, fourth Test in Ahmedabad",
+//     description:
+//       "Australia is looking to draw the series with victory in cricket's largest stadium, the Narendra Modi Stadium in Ahmedabad. Follow all the live scores in our scorecard.",
+//     url: "http://www.abc.net.au/news/2023-03-09/live-scorecard-india-vs-australia-fourth-test-ahmedabad/102068776",
+//     urlToImage:
+//       "https://live-production.wcms.abc-cdn.net.au/efe80d41a60494b6829cf55bc923150f?impolicy=wcms_crop_resize&cropH=2813&cropW=5000&xPos=0&yPos=431&width=862&height=485",
+//     publishedAt: "2023-03-09T03:33:13Z",
+//     content: null,
+//   },
+//   {
+//     source: { id: "espn-cric-info", name: "ESPN Cric Info" },
+//     author: null,
+//     title:
+//       "PCB hands Umar Akmal three-year ban from all cricket | ESPNcricinfo.com",
+//     description:
+//       "Penalty after the batsman pleaded guilty to not reporting corrupt approaches | ESPNcricinfo.com",
+//     url: "http://www.espncricinfo.com/story/_/id/29103103/pcb-hands-umar-akmal-three-year-ban-all-cricket",
+//     urlToImage:
+//       "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1099495_800x450.jpg",
+//     publishedAt: "2020-04-27T11:41:47Z",
+//     content:
+//       "Umar Akmal's troubled cricket career has hit its biggest roadblock yet, with the PCB handing him a ban from all representative cricket for three years after he pleaded guilty of failing to report det… [+1506 chars]",
+//   },
+//   {
+//     source: { id: "espn-cric-info", name: "ESPN Cric Info" },
+//     author: null,
+//     title:
+//       "What we learned from watching the 1992 World Cup final in full again | ESPNcricinfo.com",
+//     description:
+//       "Wides, lbw calls, swing - plenty of things were different in white-ball cricket back then | ESPNcricinfo.com",
+//     url: "http://www.espncricinfo.com/story/_/id/28970907/learned-watching-1992-world-cup-final-full-again",
+//     urlToImage:
+//       "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1219926_1296x729.jpg",
+//     publishedAt: "2020-03-30T15:26:05Z",
+//     content:
+//       "Last week, we at ESPNcricinfo did something we have been thinking of doing for eight years now: pretend-live ball-by-ball commentary for a classic cricket match. We knew the result, yes, but we tried… [+6823 chars]",
+//   },
+
+//   {
+//     source: { id: null, name: "CNBCTV18" },
+//     author: "Vijay Anand",
+//     title:
+//       "Silicon Valley Bank fallout decimates Sweden's largest pension fund's stake by 54% - CNBCTV18",
+//     description:
+//       "Alecta — which oversees more than $104 billion in assets — had doubled its holdings in SVB during the past year, ending 2022 with a holding worth $609 million. Right now, The value of Alecta's stake is worth only $279 million, notes the report.",
+//     url: "https://www.cnbctv18.com/business/silicon-valley-bank-alecta-sweden-pension-fund-stake-54-percent-wiped-out-16141121.htm",
+//     urlToImage:
+//       "https://images.cnbctv18.com/wp-content/uploads/2021/02/stock-market-crash.jpg",
+//     publishedAt: "2023-03-10T13:17:23Z",
+//     content:
+//       "Previous Article\r\nICICI Bank gets RBI approval to extend divestment deadline for ICICI Lombard shares",
+//   },
+//   {
+//     source: { id: null, name: "FXStreet" },
+//     author: "FXStreet Insights Team",
+//     title:
+//       "Gold Price Forecast: XAU/USD to dip below $1,800 on strong US NFP report – Commerzbank - FXStreet",
+//     description:
+//       "Whether XAU/USD will now fall below the $1,800 threshold will depend chiefly on the US labour market data today. The US inflation data and the ECB wil",
+//     url: "https://www.fxstreet.com/news/gold-price-forecast-xau-usd-to-dip-below-1-800-on-strong-us-nfp-report-commerzbank-202303101118",
+//     urlToImage:
+//       "https://editorial.fxstreet.com/images/Markets/Commodities/Metals/Gold/aurum-37842316_Large.jpg",
+//     publishedAt: "2023-03-10T11:18:42Z",
+//     content:
+//       "Information on these pages contains forward-looking statements that involve risks and uncertainties. Markets and instruments profiled on this page are for informational purposes only and should not i… [+1689 chars]",
+//   },
+//   {
+//     source: { id: "the-times-of-india", name: "The Times of India" },
+//     author: "Shivendra Kumar",
+//     title:
+//       "Nifty Bank plunges over 850 points after SVB's rout on Wall Street - The Economic Times",
+//     description:
+//       "Nifty Bank was trading at 40,551.60 at 10:10 am and was down by 705.15 points or 1.71%. All 12 stocks in the index were in the red. While Punjab National Bank (PNB) was the top loser (-2.26%), heavyweights including HDFC Bank, ICICI Bank, and State Bank of In…",
+//     url: "https://economictimes.indiatimes.com/markets/stocks/news/nifty-bank-plunges-over-850-points-after-svbs-rout-on-wall-street/articleshow/98534114.cms",
+//     urlToImage:
+//       "https://img.etimg.com/thumb/msid-98534172,width-1070,height-580,imgsize-73406,overlay-etmarkets/photo.jpg",
+//     publishedAt: "2023-03-10T05:39:27Z",
+//     content:
+//       "Banking sector gauge Nifty Bank tanked 850 points intraday on Friday, tracking the rout on Wall Street to touch the day's lows of 40,390.80. Thanks to Silicon Valley Bank (SVB), whose shares fell 60%… [+2911 chars]",
+//   },
+//   {
+//     source: { id: null, name: "BusinessLine" },
+//     author: "BusinessLine",
+//     title:
+//       "Bank of Baroda board approves divestment of up to 49 per cent stake in credit cards subsidiary - BusinessLine",
+//     description: null,
+//     url: "https://www.thehindubusinessline.com/money-and-banking/bank-of-baroda-to-divest-up-to-49-per-cent-stake-in-bob-financial-solutions-invites-eoi-from-strategic-partners/article66602446.ece",
+//     urlToImage: null,
+//     publishedAt: "2023-03-10T05:15:00Z",
+//     content: null,
+//   },
+
+//   {
+//     source: {
+//       id: "the-wall-street-journal",
+//       name: "The Wall Street Journal",
+//     },
+//     author: "wsj",
+//     title:
+//       "San Fran Residents Seeking Concealed-Carry Permits Endure Long Waits, Fear Scorn...",
+//     description:
+//       "Applications have risen since Supreme Court ruling on gun rights",
+//     url: "https://www.wsj.com/articles/san-francisco-residents-seeking-concealed-carry-permits-endure-long-waits-fear-scorn-40056c3",
+//     urlToImage: "https://images.wsj.net/im-740181/social",
+//     publishedAt: "2023-03-10T15:00:04Z",
+//     content:
+//       "San Francisco Residents Seeking Concealed-Carry Permits Endure Long Waits, Fear ScornSAN FRANCISCO—A San Francisco electrician hides his gun case in a backpack and his ammunition in a toolbox when he… [+890 chars]",
+//   },
+//   {
+//     source: {
+//       id: "the-wall-street-journal",
+//       name: "The Wall Street Journal",
+//     },
+//     author: "Belle Lin",
+//     title: "Uber Signs Cloud Deals With Google and Oracle",
+//     description:
+//       "Two seven-year deals will help ride-hailing company end reliance on its own data centers",
+//     url: "https://www.wsj.com/articles/uber-signs-cloud-deals-with-google-and-oracle-b45a9372",
+//     urlToImage: "https://images.wsj.net/im-722868/social",
+//     publishedAt: "2023-02-13T13:03:00Z",
+//     content:
+//       "Uber\r\nTechnologies Inc. plans to move its information-technology from its own data centers to\r\nAlphabet Inc.\r\nand\r\nOracle Corp.s\r\ncloud-computing platforms, the companies said Monday.The San Francisc… [+4507 chars]",
+//   },
+//   {
+//     source: {
+//       id: "the-wall-street-journal",
+//       name: "The Wall Street Journal",
+//     },
+//     author: "Collin Eaton",
+//     title:
+//       "Chevron Weighs Extending CEO Mike Wirth Past Mandatory Retirement Age",
+//     description:
+//       "Board doesn’t yet see an obvious internal replacement for CEO, remains pleased with stewardship",
+//     url: "https://www.wsj.com/articles/chevron-weighs-extending-ceo-mike-wirth-past-mandatory-retirement-age-82cd233c",
+//     urlToImage: "https://images.wsj.net/im-722576/social",
+//     publishedAt: "2023-02-13T12:02:00Z",
+//     content:
+//       "Chevron Corp.s board of directors is considering waiving the companys mandatory retirement age for Chief Executive Mike Wirth, a move that would allow him to remain CEO for a longer period, people fa… [+408 chars]",
+//   },
+//   {
+//     source: {
+//       id: "the-wall-street-journal",
+//       name: "The Wall Street Journal",
+//     },
+//     author: "The Wall Street Journal",
+//     title: "The number of ATMs has declined as people rely less on cash",
+//     description:
+//       "ATMs are disappearing due to rising crime and an increase in digital transactions. Banks are forced to close ATMs at night in major cities like New York.",
+//     url: "https://www.wsj.com/articles/the-number-of-atms-has-declined-as-people-rely-less-on-cash-81268fa2",
+//     urlToImage:
+//       "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2021/10/0/0/Bank-of-America-ATM.jpg?ve=1&tl=1",
+//     publishedAt: "2023-03-03T18:36:13Z",
+//     content:
+//       "The slow move toward a cashless society is helping to send the ubiquitous ATM into decline around the U.S., presenting challenges for those who still largely rely on cash. \r\nAfter peaking at 470,000 … [+5836 chars]",
+//   },
+// ];
